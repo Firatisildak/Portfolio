@@ -11,6 +11,31 @@ menuIcon.onclick= () =>{
 /*==============================scroll sections active link============== */
 let sections=document.querySelectorAll('section');
 let navLinks=document.querySelectorAll('header nav a');
+/*==============================Read More and Read less ============== */
+document.addEventListener("DOMContentLoaded", function() {
+    const readMoreBtn = document.getElementById("read-more");
+    const readLessBtn = document.getElementById("read-less");
+    const hiddenParagraph = document.querySelector(".hidden");
+
+    // Başlangıçta "Read Less" butonunu gizle
+    readLessBtn.style.display = "none";
+
+    readMoreBtn.addEventListener("click", function(event) {
+        event.preventDefault();
+        hiddenParagraph.style.display = "block";
+        readMoreBtn.style.display = "none";
+        readLessBtn.style.display = "block"; // Read Less butonunu göster
+    });
+
+    readLessBtn.addEventListener("click", function(event) {
+        event.preventDefault();
+        hiddenParagraph.style.display = "none";
+        readMoreBtn.style.display = "block";
+        readLessBtn.style.display = "none"; // Read Less butonunu gizle
+    });
+});
+
+
 
 window.onscroll= () =>{
 	sections.forEach(sec => {

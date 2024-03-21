@@ -15,6 +15,9 @@
 	--text-color:#fff;
 	--main-color:#0ef;
 }
+.hidden {
+    display: none;
+}
 
 html {
 	font-size: 62.5%;
@@ -127,6 +130,8 @@ span {
 }
 
 .btn{
+	text-align: center;
+    text-decoration: none;
 	display: inline-block;
 	padding: 1rem 2.8rem;
 	background: var(--main-color);
