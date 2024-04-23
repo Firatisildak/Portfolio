@@ -77,7 +77,8 @@ section{
 	align-items: center;
 }
 .home-img img{
-	width: 35vw;
+	width: 25vw;
+	border-radius: 50%;
 	animation: floatImage 4s ease-in-out infinite;
 }
 @keyframes floatImage{
@@ -156,7 +157,8 @@ span {
 }
 
 .about-img img{
-	width: 35vw;
+	border-radius: 50%;
+	width: 25vw;
 }
 .heading{
 	text-align: center;
